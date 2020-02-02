@@ -1,10 +1,53 @@
+.thumbnail {
+    position: relative;
+}
 
-h1, h2, p {
+.caption {
+    position: absolute;
+    height: 60px;
+    width: 70%;
+    bottom: 16%;
+    right: ;
+    background-color: black;
+    opacity: .75;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+.capText {
+    color: white;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+p {
     font-family: 'Roboto', sans-serif;
+    color: #5F5F5F;
+}
+
+h5 {
+    margin-top: 30px;
+}
+
+.blanketCat {
+    float: left;
+    height:250px;
+    margin-right:15px;
+    margin-bottom: 15px;
 }
 
 .container {
     width: 100%;
+}
+
+.card {
+    width: 70%;
 }
 
 .card-text {
@@ -19,15 +62,38 @@ h1, h2, p {
     padding: 30px;
 }
 
-.blanketCat {
-    float: left;
-    height:170px;
-    margin-right:15px;
-    margin-bottom: 15px;
+.img {
+    width: 100%;
+    height: auto;
+}    
+
+.img-fluid {
+    margin-bottom: 30px;
+    min-width: 250px;
+}
+
+#fifthWheel {
+    width: 50%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5F5F5F;
+    color: white;
+    text-align: center;
+  }
+    
+.grayText {
+    color: #5F5F5F;
 }
 
 .nav-link {
     color: white;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 .navbar-brand {
@@ -36,6 +102,19 @@ h1, h2, p {
     padding: .3125rem;
     vertical-align: middle;
     color: #5F5F5F;
+}
+
+#subMenu {
+    visibility: hidden;
+}
+
+.nav-item, 
+.subMenu {
+    color: #5F5F5F;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Parallax Scroll */
@@ -53,8 +132,68 @@ h1, h2, p {
     background-size: cover;
   }
 
+
+  /* 980px Breakpoint */
+  @media only screen and (max-width: 980px) {
+    .card {
+        width: 100%;
+    }
+
+    #subMenu {
+        padding-top: 10px;
+        background-color: #dddddd;
+        display: block;
+        visibility: visible;
+        height: 60px;
+    }
+
+    .mainMenu {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        color: #5F5F5F;
+        font-weight: 500;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+  }
+
+  /* 768px Breakpoint */
   @media only screen and (max-width: 768px) {
     .card {
+        width: 100%;
+    }
+
+    #subMenu {
+        padding-top: 10px;
+        background-color: #dddddd;
+        display: block;
+        visibility: visible;
+        height: 60px;
+    }
+
+    .mainMenu {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        color: #5F5F5F;
+        font-weight: 500;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+
+    .blanketCat {
+        width: 100%;
+        height: auto;
+    }
+
+    #fifthWheel {
         width: 100%;
     }
   }
