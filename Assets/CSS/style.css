@@ -1,3 +1,7 @@
+body {
+    min-height: 800px;
+}
+
 .thumbnail {
     position: relative;
 }
@@ -120,7 +124,7 @@ h5 {
 /* Parallax Scroll */
 .parallax {
     /* The image used */
-    background-image: url("../Assets/Images/background.jpg");
+    background-image: url("../Images/background.jpg");
   
     /* Set a specific height */
     height: 500px;
