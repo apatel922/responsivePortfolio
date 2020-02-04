@@ -6,7 +6,7 @@
 
 
 
-## This is a responsive portfolio for cats. 
+### This is a responsive portfolio for cats. 
 ### ~~But, you're not a cat, so get the fuck out.~~
 
 
